@@ -8,46 +8,72 @@
     <!-- Bootstrap Css link -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
 <link rel="stylesheet" href="style.css">
+
+<link rel="stylesheet" href="style.css">
+<!-- animation link -->
+<link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
 </head>
 <body>
+
+    
 <!-- navbar -->
-<header>
-    <div>
-    <nav class="navbar navbar-expand-lg navbar-light " style="background-color: rgb(207, 240, 218);">
-        <div class="container">
-          <a class="navbar-brand" href="#"><img src="Logo.png" width="25%"></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Books</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Courses</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Others</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Blog</a>
-              </li>
-              <button class="btn btn-success" style="border-radius: 20px;">
-                Sign in
-         
-             </button>
-            </ul>
-             
-        
-          </div>
+
+    <header>
+        <div>
+        <nav class="navbar navbar-expand-lg navbar-light " style="background-color: rgb(207, 240, 218);">
+            <div class="container">
+              <a class="navbar-brand" href="#"><img src="Logo.png" width="25%"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Books</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Courses</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Others</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Blog</a>
+                  </li>
+                  
+                 
+                </ul>
+    
+    
+              </div>
+            </div>
+         </div>
+
+<div>
+            <li>
+                <button class="btn btn-success" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Sign in</button>
+
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                  <div class="offcanvas-header">
+                    <h5 id="offcanvasRightLabel">Open Additional Menu</h5>
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                  </div>
+                  <div class="offcanvas-body">
+                    Hello!!!
+                    Please Sign in the form.
+                  </div>
+                </div>
+            </li>
         </div>
-      </nav>
-    </div>
-</header>
+    </nav>
+    </header>
+         
 
 <!-- 2nd part begins -->
 <main>
@@ -55,14 +81,39 @@
     <div class="row">
         <div class="d-flex justify-content-center align-items-center col-lg-6 col-md-6 col-12">
             <div>
+                <h1 class="animate__animated animate__pulse">Welcome to the page</h1>
                 <p class="text-danger" style="margin-left: 60px;">Are you ready to learn?</p>
-                <h1 style="margin-left: 60px;">Learn With Fun on <p class="text-success">any schedule</p></h1>
+                <h1 style="margin-left: 60px;">Learn With Fun on <p class="text-success animate__animated animate__swing">any schedule</p></h1>
                 <p style="margin-left: 60px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos aut quia praesentium sit harum nulla iusto quisquam error, voluptates id porro, sapiente suscipit omnis ad veniam eveniet beatae illo accusamus.</p>
             
-            <button class="btn btn-success" style="margin-left: 60px; border-radius: 50px;">
-               Get Started
-        
-            </button>
+            
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-success" style="margin-left: 60px;" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    Get Started
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="people.png" width="50px;">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+            
         </div>
         
         </div>
